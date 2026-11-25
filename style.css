@@ -421,45 +421,68 @@ a {
    FOOTER
 ========================= */
 
+/* Force Footer Center Alignment */
 footer {
-    text-align: center;
-    padding: 40px 20px;
+    text-align: center !important;
 }
 
-footer .container {
+footer .container,
+footer .row {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+footer .row > div,
+footer .col,
+footer [class*="col-"] {
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 20px;
 }
 
 footer h3,
 footer h4,
-footer p {
-    text-align: center;
+footer h5,
+footer p,
+footer a {
+    text-align: center !important;
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    list-style: none !important;
+    text-align: center !important;
 }
 
 footer ul li {
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: center !important;
 }
 
 footer .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 15px;
 }
 
 footer .footer-bottom {
-    text-align: center;
     width: 100%;
-    margin-top: 20px;
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    footer * {
+        text-align: center !important;
+    }
+
+    footer .row,
+    footer .row > div {
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 /* =========================
    MOBILE RESPONSIVE NAVBAR
