@@ -421,46 +421,58 @@ a {
    FOOTER
 ========================= */
 
-/* Force Footer Center Alignment */
+/* ===== FOOTER DESIGN ===== */
+
 footer {
+    background-color: #003366 !important;
+    color: white !important;
+    padding: 40px 20px;
     text-align: center !important;
 }
 
-footer .container,
-footer .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
+footer .container {
     text-align: center !important;
+}
+
+footer .row {
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 footer .row > div,
-footer .col,
 footer [class*="col-"] {
-    width: 100%;
     text-align: center !important;
-    margin-bottom: 20px;
 }
 
 footer h3,
 footer h4,
 footer h5,
 footer p,
-footer a {
+footer a,
+footer li {
+    color: white !important;
     text-align: center !important;
 }
 
 footer ul {
+    list-style: none;
     padding: 0 !important;
-    list-style: none !important;
-    text-align: center !important;
+    margin: 0 auto !important;
 }
 
 footer ul li {
-    text-align: center !important;
+    margin-bottom: 10px;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00bfff !important;
+}
+
+/* Social Icons Center */
 footer .social-icons {
     display: flex !important;
     justify-content: center !important;
@@ -468,47 +480,55 @@ footer .social-icons {
     gap: 15px;
 }
 
+/* Footer Bottom */
 footer .footer-bottom {
-    width: 100%;
     text-align: center !important;
+    width: 100%;
+    margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    footer * {
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        width: 100%;
         text-align: center !important;
     }
 
-    footer .row,
-    footer .row > div {
-        justify-content: center !important;
-        align-items: center !important;
+    footer .container {
+        width: 100%;
+        text-align: center !important;
     }
-}
 
-/* Your existing CSS code */
+    footer .row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
 
-/* Your other section styles */
+    footer .row > div,
+    footer [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        margin: 0 auto 20px auto !important;
+    }
 
+    footer ul {
+        text-align: center !important;
+        padding: 0 !important;
+    }
 
-/* ===== FOOTER DARK BLUE ===== */
-footer {
-    background-color: #003366 !important;
-    color: white !important;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-footer h3,
-footer h4,
-footer h5,
-footer p,
-footer li,
-footer a {
-    color: white !important;
-}
-
-footer a:hover {
-    color: #00bfff !important;
+    footer p,
+    footer h3,
+    footer h4,
+    footer h5,
+    footer a,
+    footer li {
+        text-align: center !important;
+    }
 }
 /* =========================
    MOBILE RESPONSIVE NAVBAR
