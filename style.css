@@ -484,6 +484,32 @@ footer .footer-bottom {
         align-items: center !important;
     }
 }
+
+/* Your existing CSS code */
+
+/* Your other section styles */
+
+
+/* ===== FOOTER DARK BLUE ===== */
+footer {
+    background-color: #003366 !important;
+    color: white !important;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h3,
+footer h4,
+footer h5,
+footer p,
+footer li,
+footer a {
+    color: white !important;
+}
+
+footer a:hover {
+    color: #00bfff !important;
+}
 /* =========================
    MOBILE RESPONSIVE NAVBAR
 ========================= */
